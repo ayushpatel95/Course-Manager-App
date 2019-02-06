@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jarvis.myapplication.AddInstructorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/instructorcameraiv"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/instructorfirstnameed"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_below="@id/instructorcameraiv"
+            android:layout_marginTop="20dp"
+            android:inputType="textCapWords"
+            android:hint="First Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:inputType="textCapWords"
+            android:id="@+id/instructorlastnameed"
+            android:layout_below="@id/instructorfirstnameed"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/emailed"
+            android:layout_below="@id/instructorlastnameed"
+            android:layout_marginTop="10dp"
+            android:hint="Email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/websiteed"
+            android:layout_below="@id/emailed"
+            android:layout_marginTop="10dp"
+            android:hint="Personal Website"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/websiteed"
+            android:orientation="horizontal" >
+
+            <Button
+                android:text="Reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/iresetbtn"/>
+
+            <Button
+                android:text="Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/icreatebtn"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

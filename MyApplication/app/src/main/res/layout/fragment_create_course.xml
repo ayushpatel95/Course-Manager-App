@@ -1,0 +1,240 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.example.jarvis.myapplication.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="Title "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="textCapWords"
+            android:id="@+id/titleinstructored"
+            />
+
+        </LinearLayout>
+        <TextView
+            android:text="Choose Instructor "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noinstructors"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/rcvinstructor"
+            android:layout_marginTop="5dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:text="Schedule "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="Day "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/day"
+                android:id="@+id/dayspinner">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="Time "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:id="@+id/hourinstructored"
+                />
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLength="2"
+                android:id="@+id/minuteinstructored"
+                android:inputType="number"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/timespinner"
+                android:entries="@array/ampm"
+                android:layout_gravity="center"
+                >
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="Credit hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/instructorrg"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:scaleY="0.8"
+                    android:scaleX="0.8"
+                    android:text=" 1"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/instructorrb1"
+                    android:textSize="25dp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:scaleY="0.8"
+                    android:scaleX="0.8"
+                    android:text=" 2"
+                    android:id="@+id/instructorrb2"
+                    android:textSize="25dp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:scaleY="0.8"
+                    android:layout_weight="1"
+                    android:scaleX="0.8"
+                    android:text=" 3"
+                    android:id="@+id/instructorrb3"
+                    android:textSize="25dp"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="Semester "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/semester"
+                android:textAlignment="center"
+                android:id="@+id/semspinner">
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:text="Reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/resetbtn"/>
+
+            <Button
+                android:text="Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/createbtn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

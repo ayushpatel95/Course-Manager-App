@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="Courseclick"
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/coourseimageview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Title"
+            android:textColor="#000000"
+            android:id="@+id/coursetitletv"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Title"
+            android:textColor="#000000"
+            android:id="@+id/courseinstructortv"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Title"
+            android:textColor="#000000"
+            android:id="@+id/coursedaytimetv"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

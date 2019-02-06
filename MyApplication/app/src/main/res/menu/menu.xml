@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home" android:id="@+id/home"></item>
+    <item android:title="Instructors" android:id="@+id/instructors"></item>
+    <item android:title="Add Instructor" android:id="@+id/addinstructor"></item>
+    <item android:title="Logout" android:id="@+id/logout"></item>
+    <item android:title="Exit" android:id="@+id/exit"></item>
+</menu>

@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jarvis.myapplication.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/firstnameed"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:enabled="false"
+            android:layout_marginTop="20dp"
+            android:hint="First Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/lastnameed"
+            android:layout_below="@id/firstnameed"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="Last Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/usernameed"
+            android:enabled="false"
+            android:layout_below="@id/lastnameed"
+            android:layout_marginTop="10dp"
+            android:hint="Username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:singleLine="true"
+            android:id="@+id/passworded"
+            android:layout_below="@id/usernameed"
+            android:layout_marginTop="10dp"
+            android:hint="Password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:singleLine="true"
+            android:id="@+id/semestered"
+            android:layout_below="@id/passworded"
+            android:layout_marginTop="10dp"
+            android:hint="Password"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
